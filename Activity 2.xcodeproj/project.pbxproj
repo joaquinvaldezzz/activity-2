@@ -6,8 +6,13 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		D21586B52D8911FB0099DC67 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = D21586B42D8911FB0099DC67 /* README.md */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		D21586A32D8910A60099DC67 /* Activity 2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Activity 2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D21586B42D8911FB0099DC67 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -32,6 +37,7 @@
 		D215869A2D8910A60099DC67 = {
 			isa = PBXGroup;
 			children = (
+				D21586B42D8911FB0099DC67 /* README.md */,
 				D21586A52D8910A60099DC67 /* Activity 2 */,
 				D21586A42D8910A60099DC67 /* Products */,
 			);
@@ -109,6 +115,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D21586B52D8911FB0099DC67 /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,7 +271,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.valdez.Activity-2";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.valdez.activity-2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -292,7 +299,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.valdez.Activity-2";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.valdez.activity-2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
