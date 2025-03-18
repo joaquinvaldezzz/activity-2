@@ -9,13 +9,34 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        NavigationStack {
+            FruitsListView()
         }
-        .padding()
+    }
+}
+
+struct FruitsListView: View {
+    let fruits: [String] = ["Apple", "Banana", "Orange", "Grapes", "Mango"]
+    
+    var body: some View {
+        List(fruits, id: \.self) {
+            item in NavigationLink(destination: SelectedFruitView(item: item)) {
+                Text(item)
+            }.navigationTitle("Fruits")
+        }
+    }
+}
+
+struct SelectedFruitView: View {
+    let item: String
+    
+    var body: some View {
+        VStack {
+            Text("You selected \(item).")
+                .font(.largeTitle)
+                .padding()
+                .navigationTitle(item)
+        }
     }
 }
 
